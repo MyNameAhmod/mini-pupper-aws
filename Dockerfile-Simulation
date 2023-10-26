@@ -17,7 +17,7 @@ RUN sudo apt install ros-humble-teleop-twist-keyboard -y
 # Build the Robot application
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && rosdep install --rosdistro humble --from-paths src --ignore-src -r -y && colcon build --cmake-args '-Wno-dev' && sudo apt clean"
 # Change log leven to debug
-# RUN sudo sed -i 's/INFO/DEBUG/' /opt/ros/humble/share/ros/config/rosconsole.config
+# RUN sudo sed -i 's/INFO/DEBUG/' /opt/ros/foxy/share/ros/config/rosconsole.config
 
 # Add entrypoint script and grant permission
 COPY scripts/simulation-entrypoint.sh simulation-entrypoint.sh
