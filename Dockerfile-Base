@@ -1,6 +1,6 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
-FROM ros:humble
+FROM ros:foxy
 
 ENV DEBIAN_FRONTEND noninteractive
 # Install common dependency and ROS tools
@@ -21,7 +21,7 @@ ENV QT_X11_NO_MITSHM=1
 # Install Gazebo 11
 RUN curl -sSL http://get.gazebosim.org | sh
 #RUN wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -; \
-#    sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-humble `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-humble.list' && \
+#    sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-foxy `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-foxy.list' && \
 #    apt-get update && apt-get install -y gazebo11 && apt-get clean
 
 # Create user to reduce privilege
