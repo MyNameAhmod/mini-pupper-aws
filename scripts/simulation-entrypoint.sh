@@ -1,5 +1,5 @@
 #!/bin/bash
-source /opt/ros/humble/setup.bash
+source /opt/ros/foxy/setup.bash
 source /usr/share/gazebo-11/setup.sh
 source /home/robomaker/workspace/simulation_ws/install/setup.sh
 source ./install/setup.sh
