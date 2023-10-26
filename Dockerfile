@@ -1,5 +1,5 @@
 # Set main arguments.
-ARG ROS_DISTRO=humble
+ARG ROS_DISTRO=foxy
 ARG LOCAL_WS_DIR=workspace
 
 # ==== ROS Build Stages ====
